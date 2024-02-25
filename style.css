@@ -1,0 +1,302 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: linear-gradient(to right, white , black, white);
+}
+
+.top {
+ background-color: rgb(240, 240, 240);
+  height: 100px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  border: solid gray;
+  border-width: 2px 2px 0 2px;
+
+}
+.logga {
+  height: 150px;
+  width: auto;
+  margin-right: 50%;
+  
+}
+.mail,
+.facebook,.tel {
+  height: 50px;
+  width: auto;
+  margin-left: 30px;
+}
+.scroll a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 30px;
+  font-weight: bold;
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+.scroll a:hover{
+  border-color:white;
+}
+#om, #kontakt, .slideshow-container{
+height: 400px;
+width: 90%;
+margin: auto;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+position: relative;
+background-color: cornsilk;
+border:solid gray;
+border-width: 0 2px 0 2px;
+}
+.slideimg{
+position: absolute;
+text-align: center;
+margin: auto;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+height: 100%;
+padding-top: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: black;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+background-color: rgb(240, 240, 240);
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+color: white;
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+display: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: black;
+font-size: 12px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+text-align: center;
+margin: auto;
+display: none;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+.dots{
+position: absolute;
+left: 0;
+right: 0;
+text-align: center;
+margin: auto;
+bottom: 5px;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+#myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+background-color: gray;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 10%;
+}
+
+#myBtn:hover {
+background-color: #555;
+}
+
+.omtext{
+position: absolute;
+text-align: center;
+width: 60%;
+color: black;
+margin: auto;
+top: 50px;
+bottom: 0;
+left: 100px;
+}
+.beskrivning, ul{
+  font-size: 1.2rem;
+}
+
+.ombild{
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+right: 50px;
+height: 300px;
+width: 300px;
+background-color: gray;
+border-radius: 20px;
+}
+#om{
+background-color: cornsilk;
+position: relative;
+border:solid gray;
+border-width: 0 2px 0 2px;
+height: 500px;
+}
+
+#kontakt {
+background-color: black;
+height: 200px;
+color: rgb(240, 240, 240);
+position: relative;
+border:solid gray;
+border-width: 0 2px 2px 2px;
+}
+.kontaktInfo{
+position: absolute;
+text-align: center;
+left: 0;
+right: 0;
+margin: auto;
+}
+@media only screen and (max-width: 1070px){
+  .scroll{
+    display: none;
+  }
+  
+}
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Hide social icons and scroll links on smaller screens */
+  .social,
+  .scroll {
+    display: none;
+  }
+  #om{
+    height: 800px;
+    position: relative;
+  }
+
+  /* Center the logo */
+  .logga {
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: -10px;
+  }
+
+  /* Additional adjustments for smaller screens */
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slideimg {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .prev, .next {
+    padding: 10px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+
+  .omtext {
+    width: 80%;
+    top: 20px;
+    left: 10%;
+  }
+
+  .ombild {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+ 
+  }
+}
