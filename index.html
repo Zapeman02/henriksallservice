@@ -30,6 +30,7 @@
 
     .logo img {
       max-height: 100px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       filter: invert(100%);
     }
 
@@ -48,6 +49,11 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: background-color 0.2s ease-in-out;
       position: relative;
+      margin-top: 10px;
+    }
+
+    .contact-button:hover {
+      background-color: #444444;
     }
 
     .contact-button::after {
@@ -69,7 +75,8 @@
     </div>
 
     <div class="contact-info">
-      <a href="mailto:Henrik@henriksallservice.se" class="contact-button">Kontakta oss</a>
+      <a href="mailto:Henrik@henriksallservice.se" class="contact-button">Mail</a>
+      <a href="tel:0730564800" class="contact-button">Telefon</a>
     </div>
   </div>
 </body>
