@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Landing Page</title>
+  <style>
+    body {
+      background-color: #181818; /* Lighter background color */
+      color: #ffffff;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .logo {
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .logo img {
+      max-height: 100px; /* Adjust the maximum height as needed */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-button {
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 25px;
+      background-color: #333333;
+      color: #ffffff;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s ease-in-out;
+      position: relative;
+    }
+
+    .contact-button::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="your-logo.png" alt="Company Logo">
+  </div>
+
+  <div class="contact-info">
+    <a href="mailto:your@email.com" class="contact-button">Contact Us</a>
+  </div>
+</body>
+</html>
