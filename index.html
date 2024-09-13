@@ -6,8 +6,8 @@
     <meta name="description" content="Henriks Allservice - All service for properties, both exterior and interior, since 2005.">
     <meta property="og:title" content="Henriks Allservice">
     <meta property="og:description" content="All service for properties, both exterior and interior, since 2005.">
-    <meta property="og:image" content="path_to_image.jpg"> <!-- Update with the path to a relevant image -->
-    <meta property="og:url" content="http://www.yourwebsite.com">
+    <meta property="og:image" content="path_to_image.jpg"> <!-- Update with the actual image path -->
+    <meta property="og:url" content="http://www.yourwebsite.com"> <!-- Update with your actual site URL -->
     <title>Henriks Allservice</title>
     <style>
         body {
@@ -30,7 +30,9 @@
             width: 100%;
             height: 100%;
             background-image: var(--background-image);
-            background-size: cover;
+            background-size: cover; /* Ensure the image covers the entire area */
+            background-position: center center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
             filter: blur(5px);
             z-index: -1;
         }
@@ -131,7 +133,7 @@
                 'Bilder/blas.png',
                 'Bilder/blas2.png',
                 'Bilder/lawn.png',
-                'Bilder/lawn2.png'// Add more image paths here
+               'Bilder/lawn2.png' // Add more image paths here
             ];
 
             const body = document.getElementById('body');
